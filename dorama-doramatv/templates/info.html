@@ -1,0 +1,40 @@
+<div class='dorama-info info-style'>
+    <div class='mb-2 d-flex justify-content-between'>
+        <button class="btn btn-outline-secondary btn-sm" @click='show_search'>
+            <i aria-hidden="true" class="fa fa-arrow-left"></i> Назад
+        </button>
+        <button class="btn btn-outline-secondary btn-sm" @click='refresh' v-b-tooltip.hover.auto.bottom title='Обновить информацию'>
+            <i class="fa fa-refresh mr-0" :class="{'fa-spin': refreshing}" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class='info d-flex mb-4'>
+        <div class='left-side mr-4'>
+            <img :src="selected.img" :alt="selected.name" class="thumb">
+        </div>
+        <div class="right-side d-flex flex-column justify-content-around">
+            <div>
+                <h5>{{ selected.name }} <small class='text-muted'>{{ selected.year }}</small></h5>
+                <h6>{{ selected.english }}</h6>
+                <div>
+                    <span class="genre" v-for='genre in selected.genres' @click='search_genre(genre)'>{{ genre }}</span>
+                </div>
+            </div>
+            <div>
+                <span class="text-primary">{{selected.episodes}} эп.</span>
+                 • <span class="text-primary">{{ selected.duration }} мин.</span>
+            </div>
+            <div><h3 class="text-primary">{{selected.score}}</h3></div>
+            <div v-if="selected.watched != null">Просмотрено: {{ (selected.watched + 1) }}</div>
+            <div class='buttons'>
+                <button class="btn btn-outline-warning" @click="watch"><i class="fa fa-play"></i> Смотреть</button>
+                <button class="btn" :class="favoriteClass" @click="favorite"><i class="fa fa-star"></i> В избранное</button>
+                <!--<button class="btn" :class="alreadyWatchedClass" @click="alreadyWatched"><i class="fa fa-check"></i> Уже просмотрено</button>
+                <button class="btn" :class="dirClass" @click="selectDir">
+                    <i class="fa fa-folder-open"></i> <span v-if='!anime.folder'>Указать</span><span v-else>Убрать</span> папку
+                </button>-->
+            </div>
+        </div>
+    </div>
+    <div class="description" v-if="selected.description"><b>Описание:</b> <p>{{selected.description}}</p></div>
+    <div class='text-muted text-right'><small>Источник: doramatv.ru</small></div>
+</div>

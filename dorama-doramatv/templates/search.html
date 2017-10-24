@@ -1,0 +1,33 @@
+<div class='dorama-search'>
+    <input class='form-control mb-4' type="text" v-model='query' placeholder="Поиск дорам...">
+    <div v-if='searching' class='load-spinner'></div>
+    <div v-if='results' class='row pl-3 pr-3 search'>
+        <template v-for='dorama in results'>
+	       <div class='col-sm-6 row mb-2 search__dorama'>
+	           <img :src="dorama.img" :alt="dorama.name" class='mr-2 search__dorama__img' @click="show_info(dorama.link)">
+	           <div class='col-sm-8 search__dorama__info'>
+	               <h5 @click="show_info(dorama)">{{dorama.name}}</h5>
+	               <h6 v-if='dorama.secondName' class='text-muted'>{{dorama.secondName}}</h6>
+	               <div>{{dorama.descr}}</div>
+	               <div v-if='dorama.score'>Оценка: {{dorama.score}}/10</div>
+	               <div v-if='dorama.views'>Просмотров: {{dorama.views}}</div>
+	           </div>
+	       </div>
+	   </template>
+    </div>
+    <div v-else-if='allDoramas && allDoramas.length'>
+        <div class="cards-wrap">
+            <b-card-group columns>
+                    <b-card overlay
+                        v-for="dorama in allDoramas"
+                        key="dorama.name"
+                        :img-src="dorama.img"
+                        :title="dorama.name"
+                        :img-alt="dorama.english"
+                        :sub-title="dorama.name"
+                        @click="show_info(dorama)">
+                    </b-card>
+            </b-card-group>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+.dorama-search .search__dorama__img {
+    width: 130px;
+    height: 180px;
+    cursor: pointer;
+}
+.dorama-search .search__dorama__info h5 {
+    cursor: pointer;
+}
+.dorama__genre {
+    cursor: pointer;
+    font-size: 0.95em;
+    color: #a3a3a3;
+    &:not(:last-child):after {
+        content: ', ';
+    }
+}

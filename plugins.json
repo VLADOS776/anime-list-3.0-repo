@@ -19,6 +19,14 @@
             "author": "VLADOS776",
             "description": "OST'ы из аниме с сайта anime.thehylia.com",
             "min-version": "1.5.0"
+        },
+        {
+            "id": "dorama-doramatv",
+            "version": "1.0.0",
+            "name": "Дорамы",
+            "author": "VLADOS776",
+            "description": "Смотрите дорамы с сайта doramatv.ru",
+            "min-version": "1.5.0"
         }
     ]
 }
