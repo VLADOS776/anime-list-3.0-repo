@@ -1,6 +1,6 @@
 {
     "repo": {
-        "name": "Официальный репозиторий Anime List 3.0",
+        "name": "Anime List 3.0 Repo",
         "description": "Официальный репозиторий Anime List 3.0"
     },
     "plugins": [
@@ -13,7 +13,7 @@
             "min-version": "1.5.0"
         },
         {
-            "id": "anime-ost",
+            "id": "animeost-thehylia",
             "version": "1.0.0",
             "name": "Anime OSTs",
             "author": "VLADOS776",
