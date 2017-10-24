@@ -1,0 +1,24 @@
+{
+    "repo": {
+        "name": "Официальный репозиторий Anime List 3.0",
+        "description": "Официальный репозиторий Anime List 3.0"
+    },
+    "plugins": [
+        {
+            "id": "filler-list",
+            "version": "1.0.0",
+            "name": "Список филлеров",
+            "author": "VLADOS776",
+            "description": "Список филлеров для аниме: Naruto, Naruto: Shippuuden, Bleach, Fairy Tail, One Piece. Последнее обновление: 15.10.2017",
+            "min-version": "1.5.0"
+        },
+        {
+            "id": "anime-ost",
+            "version": "1.0.0",
+            "name": "Anime OSTs",
+            "author": "VLADOS776",
+            "description": "OST'ы из аниме с сайта anime.thehylia.com",
+            "min-version": "1.5.0"
+        }
+    ]
+}
