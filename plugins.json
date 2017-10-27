@@ -5,6 +5,14 @@
     },
     "plugins": [
         {
+            "id": "dorama-doramatv",
+            "version": "1.0.0",
+            "name": "Дорамы",
+            "author": "VLADOS776",
+            "description": "Смотрите дорамы с сайта doramatv.ru",
+            "min-version": "1.5.0"
+        },
+        {
             "id": "filler-list",
             "version": "1.0.0",
             "name": "Список филлеров",
@@ -21,11 +29,11 @@
             "min-version": "1.5.0"
         },
         {
-            "id": "dorama-doramatv",
+            "id": "clear-cache",
             "version": "1.0.0",
-            "name": "Дорамы",
+            "name": "Очистка кэша",
             "author": "VLADOS776",
-            "description": "Смотрите дорамы с сайта doramatv.ru",
+            "description": "Добавляет в настройки вкладку с информацией о кэше с возможностью очистки",
             "min-version": "1.5.0"
         }
     ]
