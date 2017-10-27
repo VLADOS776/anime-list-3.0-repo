@@ -1,0 +1,22 @@
+.form-control {
+    background-color: #eee;
+    color: #000;
+    &:focus {
+        background: #f9f9f9;
+        border-color: #656565;
+        color: #000;
+    }
+}
+.nav-tabs {
+    .nav-item .nav-link {
+        color: $fontMain;
+        &.active, &:hover {
+            background-color: transparentize($cWarning, 0.4);
+            color: $fontDark;
+            border-bottom: 2px solid #3068ce;
+        }
+    }
+}
+input:checked + .slider {
+    background-color: $cWarning;
+}

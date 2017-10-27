@@ -1,0 +1,25 @@
+@import "_colors";
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 30%;
+    position: relative;
+    margin: 30px auto;
+    background: $hrColor;
+}
+hr::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: $hrColor;
+    display: inline-block;
+    border: 2px solid $hrColor;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    margin: 0 0 0 -3px;
+}

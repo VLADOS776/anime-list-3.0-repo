@@ -1,0 +1,20 @@
+@import "_colors";
+
+body {
+    background-image: url(../images/bg.png);
+    background-repeat: repeat;
+    color: $fontMain;
+    font-family: Helvetica;
+}
+
+.load-spinner {
+    border-color: #5388a9 #cecece #cecece;
+}
+
+@import "_navbar";
+@import "_buttons";
+@import "_forms";
+@import "_hr";
+@import "_info";
+@import "_watch";
+@import "_scrollbar";

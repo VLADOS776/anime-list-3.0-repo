@@ -1,0 +1,56 @@
+$darenPercent: 8%;
+
+.btn-dark {
+    background: $cDark;
+    border-color: $cDark;
+    &:active, &:hover {
+        background-color: darken($cDark, $darenPercent);
+        border-color: darken($cDark, $darenPercent);
+    }
+}
+
+.btn-outline-warning {
+    color: $cWarning;
+    border-color: $cWarning;
+    &:active {
+        background: $cWarning;
+        border-color: $cWarning;
+    }
+    &:hover {
+        background-color: darken($cWarning, $darenPercent);
+        border-color: darken($cWarning, $darenPercent);
+    }
+    &:focus {
+        box-shadow: 0 0 0 3px transparentize($cWarning, 0.5);
+    }
+    &:disabled, &.disabled {
+        color: lighten($cWarning, $darenPercent);
+    }
+}
+
+.btn-warning {
+    background-color: $cWarning;
+    border-color: $cWarning;
+    color: #fff;
+    &:active {
+        background-color: $cWarning;
+        border-color: $cWarning;
+        color: #fff;
+    }
+    &:hover {
+        background-color: darken($cWarning, $darenPercent);
+        border-color: darken($cWarning, $darenPercent);
+        color: #fff;
+    }
+    &:focus {
+        box-shadow: 0 0 0 3px transparentize($cWarning, 0.5);
+    }
+    &:disabled, &.disabled {
+        color: lighten($cWarning, $darenPercent);
+    }
+}
+
+.anime .external_links a, .manga .external_links a, .info-style .external_links a {
+    color: #696969;
+    border-color: #c1c1c1;
+}

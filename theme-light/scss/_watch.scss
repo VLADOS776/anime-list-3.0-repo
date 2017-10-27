@@ -1,0 +1,33 @@
+.watch, .watch-style {
+    .video-variants .card {
+        background-color: rgba(255, 255, 255, 0.4);
+        
+        .nav-tabs .nav-item {
+            a {
+                color: $fontMain;
+                &.active, &:hover {
+                    color: $fontDark;
+                }
+            }
+        }
+        
+        .video-players {
+            li {
+                color: $fontMain;
+                &.active {
+                    background-color: #5388a9;
+                }
+                .hosting {
+                    color: #cacaca;
+                }
+                &:hover {
+                    background-color: lighten($cWarning, 20%);
+                }
+            }
+            
+             &::-webkit-scrollbar-thumb {
+                background: $cWarning;
+            }
+        }
+    }
+}

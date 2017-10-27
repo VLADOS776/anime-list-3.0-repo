@@ -29,6 +29,14 @@
             "min-version": "1.5.0"
         },
         {
+            "id": "theme-light",
+            "version": "1.0.0",
+            "name": "Светлая тема",
+            "author": "VLADOS776",
+            "description": "Меняет дизайн программы на светлый",
+            "min-version": "1.5.0"
+        },
+        {
             "id": "clear-cache",
             "version": "1.0.0",
             "name": "Очистка кэша",

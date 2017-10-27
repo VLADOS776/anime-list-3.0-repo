@@ -1,0 +1,9 @@
+.navbar {
+    background: #e2e3e4;
+    .navbar-brand {
+        color: $cWarning;
+    }
+    .navbar-nav .nav-item a {
+        color: $fontMain;
+    }
+}
