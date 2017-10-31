@@ -37,6 +37,22 @@
             "min-version": "1.5.0"
         },
         {
+            "id": "ongoing-alert",
+            "name": "Ongoing Alert",
+            "description": "При старте программы проверяет наличие новых эпизодов и выводит уведомление",
+            "author": "VLADOS776",
+            "version": "1.0.0",
+            "min-version": "1.5.0"
+        },
+        {
+            "id": "shutdown",
+            "name": "Shutdown",
+            "description": "Позволяет удаленно выключать, отправлять в сон или гибернацию ПК. Откройте страницу /shutdown на сервере",
+            "author": "VLADOS776",
+            "version": "1.0.0",
+            "min-version": "1.5.0"
+        },
+        {
             "id": "clear-cache",
             "version": "1.0.0",
             "name": "Очистка кэша",

@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content="width=device-width, initial-scale=1")
+        block title
+            title Anime List 3.0
+        link(href='/css/bootstrap.min.css', rel='stylesheet')
+        link(href='/css/font-awesome.min.css', rel='stylesheet')
+        link(href='/css/main.css', rel='stylesheet')
+    body
+        div.container.mt-3.mb-3
+            h4 Shutdown
+            button.btn.btn-outline-danger.mr-2#shutdown Выключить ПК
+            button.btn.btn-outline-warning#sleep Сон / Гибернация
+            
+        script(src='/js/jquery-3.2.1.min.js')
+        script(src='/js/popper.min.js')
+        script(src='/js/bootstrap.min.js')
+        script(src='/serverjs/main.js')
+        
+        script.
+            $('#shutdown').on('click', function() {
+                $.post('/api/shutdown/shutdown');
+            })
+            $('#sleep').on('click', function() {
+                $.post('/api/shutdown/sleep');
+            })
