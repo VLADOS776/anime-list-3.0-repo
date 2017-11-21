@@ -4,7 +4,8 @@ module.exports = function(Plugin) {
         id: "clear-cache",
         description: "Добавляет в настройки вкладку с информацией о кэше с возможностью очистки",
         version: "1.0.0",
-        author: "VLADOS776"
+        author: "VLADOS776",
+        category: ['Разное']
     }
     
     let template = `

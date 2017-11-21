@@ -5,9 +5,10 @@ module.exports = function (Plugin, pluginPath) {
         name: 'Дорамы',
         id: 'dorama-doramatv',
         description: 'Смотрите дорамы с сайта doramatv.ru',
-        version: '1.0.0',
-        minAppVersion: '1.4.0',
+        version: '1.1.0',
+        minAppVersion: '1.6.0',
         author: 'VLADOS776',
+        category: ['Видео'],
         dependencies: ['vue', 'request', 'cheerio', 'db']
     }
 
@@ -298,11 +299,6 @@ module.exports = function (Plugin, pluginPath) {
             }
         })
         
-        
-        // Добавляем пункт "Дорамы" в верхнее меню
-        let navBar = opt.app.$children[0].nav
-        navBar.splice(-1, 0, { name: 'Дорамы', page: 'dorama-main' });
-        
         // Загружаем базу данных с дорамами
         opt.dependencies.db.load('dorama')
             .then(base => {
@@ -533,5 +529,18 @@ module.exports = function (Plugin, pluginPath) {
         return doramasInDB.find(el => el.name === dorama.name) != null;
     }
     
-    Plugin.newPlugin(config, { init: init });
+    Plugin.newPlugin(config, { 
+        init: init,
+        mount: function(app) {
+            // Добавляем пункт "Дорамы" в верхнее меню
+            let navBar = app.$children[0].nav
+            navBar.splice(-1, 0, { name: 'Дорамы', page: 'dorama-main' });
+        },
+        demount: function(app) {
+            // Убераем пункт "Дорамы" из верхнего меню
+            let navBar = app.$children[0].nav,
+                itemIndex = navBar.findIndex(el => el.page == 'dorama-main');
+            navBar.splice(itemIndex, 1);
+        }
+    });
 }

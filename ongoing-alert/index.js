@@ -9,6 +9,7 @@ module.exports = function(Plugin) {
         description: "При старте программы проверяет наличие новых эпизодов и выводит уведомление",
         author: "VLADOS776",
         version: "1.1.0",
+        category: ['Аниме'],
         changelog: changelog
     }
     

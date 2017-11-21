@@ -3,7 +3,8 @@ module.exports = function(Plugin, paths) {
         id: "light-design",
         name: "Светлая тема",
         version: "1.0.0",
-        author: "VLADOS776"
+        author: "VLADOS776",
+        category: ["Тема"]
     }
     
     const fs = require('fs'),

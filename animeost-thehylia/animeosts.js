@@ -8,7 +8,8 @@ module.exports = function(Plugin) {
         version: '1.0.0',
         author: 'VLADOS776',
 		repo: 'https://github.com/VLADOS776/al3.0-Plugin-Anime-Ost',
-        dependencies: ['request', 'cheerio', 'log', 'fuse']
+        dependencies: ['request', 'cheerio', 'log', 'fuse'],
+        category: ['Аниме', 'Музыка']
     }
 
     const template = `<hr>

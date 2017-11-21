@@ -7,7 +7,8 @@ module.exports = function(Plugin) {
         description: 'Список филлеров для аниме: Naruto, Naruto: Shippuuden, Bleach, Fairy Tail, One Piece. Последнее обновление: 15.10.2017',
         version: '1.0.0',
         author: 'VLADOS776',
-		repo: 'https://github.com/VLADOS776/al3.0-plugin-Filler-List'
+		repo: 'https://github.com/VLADOS776/al3.0-plugin-Filler-List',
+        category: ['Аниме']
     }
 	
 	let Fillers = {

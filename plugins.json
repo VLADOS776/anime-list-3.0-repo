@@ -10,6 +10,7 @@
             "name": "Дорамы",
             "author": "VLADOS776",
             "description": "Смотрите дорамы с сайта doramatv.ru",
+            "category": ["Видео"],
             "min-version": "1.5.0"
         },
         {
@@ -18,7 +19,8 @@
             "name": "Список филлеров",
             "author": "VLADOS776",
             "description": "Список филлеров для аниме: Naruto, Naruto: Shippuuden, Bleach, Fairy Tail, One Piece. Последнее обновление: 15.10.2017",
-            "min-version": "1.5.0"
+            "min-version": "1.5.0",
+            "category": ["Аниме"]
         },
         {
             "id": "animeost-thehylia",
@@ -26,7 +28,8 @@
             "name": "Anime OSTs",
             "author": "VLADOS776",
             "description": "OST'ы из аниме с сайта anime.thehylia.com",
-            "min-version": "1.5.0"
+            "min-version": "1.5.0",
+            "category": ["Аниме", "Музыка"]
         },
         {
             "id": "theme-light",
@@ -34,7 +37,8 @@
             "name": "Светлая тема",
             "author": "VLADOS776",
             "description": "Меняет дизайн программы на светлый",
-            "min-version": "1.5.0"
+            "min-version": "1.5.0",
+            "category": ["Тема"]
         },
         {
             "id": "ongoing-alert",
@@ -42,7 +46,8 @@
             "description": "При старте программы проверяет наличие новых эпизодов и выводит уведомление",
             "author": "VLADOS776",
             "version": "1.1.0",
-            "min-version": "1.5.0"
+            "min-version": "1.5.0",
+            "category": ["Аниме"]
         },
         {
             "id": "shutdown",
@@ -50,7 +55,8 @@
             "description": "Позволяет удаленно выключать, отправлять в сон или гибернацию ПК. Откройте страницу /shutdown на сервере",
             "author": "VLADOS776",
             "version": "1.0.0",
-            "min-version": "1.5.0"
+            "min-version": "1.5.0",
+            "category": ["Разное"]
         },
         {
             "id": "clear-cache",
@@ -58,7 +64,8 @@
             "name": "Очистка кэша",
             "author": "VLADOS776",
             "description": "Добавляет в настройки вкладку с информацией о кэше с возможностью очистки",
-            "min-version": "1.5.0"
+            "min-version": "1.5.0",
+            "category": ["Разное"]
         }
     ]
 }

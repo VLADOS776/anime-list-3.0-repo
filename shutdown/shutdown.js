@@ -4,7 +4,8 @@ module.exports = function(Plugin) {
         name: "Shutdown",
         description: "Позволяет удаленно выключать, отправлять в сон или гибернацию ПК. Откройте страницу /shutdown на сервере",
         author: "VLADOS776",
-        version: "1.0.0",
+        version: "1.1.0",
+        category: ['Разное'],
         dependencies: ['./js/config', 'server']
     }
     
@@ -28,6 +29,10 @@ module.exports = function(Plugin) {
         init: function(opt) {
             config = opt.dependencies['./js/config'];
             Server = opt.dependencies.server;
+            
+            Server.inject(function() {
+                $('.navbar-nav').append('<li class="nav-item"><a href="/shutdown" class="nav-link">Выключить ПК</a></li>')
+            })
             
             Server.app().get('/shutdown', (req, res) => {
                 res.render(__dirname + '/server.pug');
