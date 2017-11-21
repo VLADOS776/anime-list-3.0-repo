@@ -6,6 +6,7 @@ module.exports = function(Plugin) {
         author: "VLADOS776",
         version: "1.1.0",
         category: ['Разное'],
+        icon: 'icon.png',
         dependencies: ['./js/config', 'server']
     }
     

@@ -9,6 +9,7 @@ module.exports = function (Plugin, pluginPath) {
         minAppVersion: '1.6.0',
         author: 'VLADOS776',
         category: ['Видео'],
+        icon: 'icon.png',
         dependencies: ['vue', 'request', 'cheerio', 'db']
     }
 

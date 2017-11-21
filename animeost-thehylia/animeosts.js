@@ -9,6 +9,7 @@ module.exports = function(Plugin) {
         author: 'VLADOS776',
 		repo: 'https://github.com/VLADOS776/al3.0-Plugin-Anime-Ost',
         dependencies: ['request', 'cheerio', 'log', 'fuse'],
+        icon: 'icon.png',
         category: ['Аниме', 'Музыка']
     }
 

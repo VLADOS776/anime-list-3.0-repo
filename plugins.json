@@ -11,6 +11,7 @@
             "author": "VLADOS776",
             "description": "Смотрите дорамы с сайта doramatv.ru",
             "category": ["Видео"],
+            "icon": "icon.png",
             "min-version": "1.5.0"
         },
         {
@@ -20,6 +21,7 @@
             "author": "VLADOS776",
             "description": "Список филлеров для аниме: Naruto, Naruto: Shippuuden, Bleach, Fairy Tail, One Piece. Последнее обновление: 15.10.2017",
             "min-version": "1.5.0",
+            "icon": "icon.png",
             "category": ["Аниме"]
         },
         {
@@ -29,6 +31,7 @@
             "author": "VLADOS776",
             "description": "OST'ы из аниме с сайта anime.thehylia.com",
             "min-version": "1.5.0",
+            "icon": "icon.png",
             "category": ["Аниме", "Музыка"]
         },
         {
@@ -47,6 +50,7 @@
             "author": "VLADOS776",
             "version": "1.1.0",
             "min-version": "1.5.0",
+            "icon": "icon.png",
             "category": ["Аниме"]
         },
         {
@@ -56,6 +60,7 @@
             "author": "VLADOS776",
             "version": "1.0.0",
             "min-version": "1.5.0",
+            "icon": "icon.png",
             "category": ["Разное"]
         },
         {

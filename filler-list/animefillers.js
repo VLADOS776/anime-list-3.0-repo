@@ -8,6 +8,7 @@ module.exports = function(Plugin) {
         version: '1.0.0',
         author: 'VLADOS776',
 		repo: 'https://github.com/VLADOS776/al3.0-plugin-Filler-List',
+        icon: 'icon.png',
         category: ['Аниме']
     }
 	

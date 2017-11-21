@@ -10,6 +10,7 @@ module.exports = function(Plugin) {
         author: "VLADOS776",
         version: "1.1.0",
         category: ['Аниме'],
+        icon: 'icon.png',
         changelog: changelog
     }
     
