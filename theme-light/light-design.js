@@ -2,9 +2,10 @@ module.exports = function(Plugin, paths) {
     const config = {
         id: "light-design",
         name: "Светлая тема",
-        version: "1.0.0",
+        version: "1.1.0",
         author: "VLADOS776",
-        category: ["Тема"]
+        category: ["Тема"],
+        'min-version': '1.6.0'
     }
     
     const fs = require('fs'),
@@ -12,8 +13,11 @@ module.exports = function(Plugin, paths) {
           stylesPath = path.join(paths.dir, 'style', 'main.css');
     
     Plugin.newPlugin(config, {
-        init: function() {
-            jQuery('head').append(`<link rel="stylesheet" href="${stylesPath}">`);
+        mount: function() {
+            jQuery('head').append(`<link rel="stylesheet" href="${stylesPath}" id='light-theme'>`);
+        },
+        demount: function() {
+            jQuery('#light-theme').remove();
         }
     })
 }

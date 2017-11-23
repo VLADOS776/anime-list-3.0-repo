@@ -6,13 +6,13 @@
     "plugins": [
         {
             "id": "dorama-doramatv",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "name": "Дорамы",
             "author": "VLADOS776",
             "description": "Смотрите дорамы с сайта doramatv.ru",
             "category": ["Видео"],
             "icon": "icon.png",
-            "min-version": "1.5.0"
+            "min-version": "1.6.0"
         },
         {
             "id": "filler-list",
@@ -36,11 +36,11 @@
         },
         {
             "id": "theme-light",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "name": "Светлая тема",
             "author": "VLADOS776",
             "description": "Меняет дизайн программы на светлый",
-            "min-version": "1.5.0",
+            "min-version": "1.6.0",
             "category": ["Тема"]
         },
         {
@@ -58,8 +58,8 @@
             "name": "Shutdown",
             "description": "Позволяет удаленно выключать, отправлять в сон или гибернацию ПК. Откройте страницу /shutdown на сервере",
             "author": "VLADOS776",
-            "version": "1.0.0",
-            "min-version": "1.5.0",
+            "version": "1.1.0",
+            "min-version": "1.6.0",
             "icon": "icon.png",
             "category": ["Разное"]
         },
@@ -71,6 +71,25 @@
             "description": "Добавляет в настройки вкладку с информацией о кэше с возможностью очистки",
             "min-version": "1.5.0",
             "category": ["Разное"]
+        },
+        {
+            "id": "source-yummyanime",
+            "version": "1.0.0",
+            "name": "Yummyanime",
+            "author": "VLADOS776",
+            "description": "Информация с сайта yummyanime.com",
+            "min-version": "1.6.0",
+            "icon": "icon.png",
+            "category": ["source"]
+        },
+        {
+            "id": "source-animevost",
+            "version": "1.0.0",
+            "name": "Animevost",
+            "author": "VLADOS776",
+            "description": "Информация с сайта animevost.org",
+            "min-version": "1.6.0",
+            "category": ["source"]
         }
     ]
 }
