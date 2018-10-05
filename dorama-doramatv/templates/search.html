@@ -3,7 +3,7 @@
     <div v-if='searching' class='load-spinner'></div>
     <div v-if='results' class='row pl-3 pr-3 search'>
         <template v-for='dorama in results'>
-	       <div class='col-sm-6 row mb-2 search__dorama'>
+	       <div class='col-sm-6 row mb-2 search__dorama' :key="dorama.name + dorama.secondName">
 	           <img :src="dorama.img" :alt="dorama.name" class='mr-2 search__dorama__img' @click="show_info(dorama.link)">
 	           <div class='col-sm-8 search__dorama__info'>
 	               <h5 @click="show_info(dorama)">{{dorama.name}}</h5>
@@ -20,7 +20,7 @@
             <b-card-group columns>
                     <b-card overlay
                         v-for="dorama in allDoramas"
-                        key="dorama.name"
+                        :key="dorama.name"
                         :img-src="dorama.img"
                         :title="dorama.name"
                         :img-alt="dorama.english"

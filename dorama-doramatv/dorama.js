@@ -5,7 +5,7 @@ module.exports = function (Plugin, pluginPath) {
         name: 'Дорамы',
         id: 'dorama-doramatv',
         description: 'Смотрите дорамы с сайта doramatv.ru',
-        version: '1.1.0',
+        version: '1.1.1',
         minAppVersion: '1.6.0',
         author: 'VLADOS776',
         category: ['Видео'],
@@ -338,7 +338,7 @@ module.exports = function (Plugin, pluginPath) {
                 info.name = $('.names .name').text();
                 info.english = $('.names .eng-name').text();
                 info.original = $('.names .original-name').text();
-                info.watchLink = $('.read-first a').attr('href');
+                info.watchLink = $('.subject-actions a.btn-primary').attr('href');
                 
                 if (info.watchLink.startsWith('/')) info.watchLink = 'http://doramatv.ru' + info.watchLink;
                 

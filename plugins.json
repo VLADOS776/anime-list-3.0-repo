@@ -6,7 +6,7 @@
     "plugins": [
         {
             "id": "dorama-doramatv",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "name": "Дорамы",
             "author": "VLADOS776",
             "description": "Смотрите дорамы с сайта doramatv.ru",
