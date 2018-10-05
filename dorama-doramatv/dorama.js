@@ -5,7 +5,7 @@ module.exports = function (Plugin, pluginPath) {
         name: 'Дорамы',
         id: 'dorama-doramatv',
         description: 'Смотрите дорамы с сайта doramatv.ru',
-        version: '1.1.1',
+        version: '1.1.2',
         minAppVersion: '1.6.0',
         author: 'VLADOS776',
         category: ['Видео'],
@@ -244,7 +244,7 @@ module.exports = function (Plugin, pluginPath) {
                         if (!this.episodes) this.episodes = data.episodes;
                         if (!this.episode) {
                             if (this.selected.watched != null) {
-                                if (this.selected.watched >= this.selected.links.length) {
+                                if (this.selected.watched >= (this.selected.links.length - 1)) {
                                     this.episode = data.episodes[this.selected.watched ];
                                 } else {
                                     this.episode = data.episodes[this.selected.watched + 1];
@@ -289,7 +289,7 @@ module.exports = function (Plugin, pluginPath) {
             },
             mounted: function() {
                 if (this.selected.watched != null && this.selected.links) {
-                    if (this.selected.watched >= this.selected.links.length) {
+                    if (this.selected.watched >= (this.selected.links.length - 1)) {
                         this.watch_ep(this.selected.links[this.selected.watched]);
                     } else {
                         this.watch_ep(this.selected.links[this.selected.watched + 1]);
